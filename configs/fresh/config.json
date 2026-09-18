@@ -1,0 +1,489 @@
+{
+  "theme": "builtin://terminal",
+  "editor": {
+    "rainbow_indentation": true,
+    "cursor_jump_animation": false,
+    "page_width": 120,
+    "cursor_style": "blinking_bar",
+    "animations": false,
+    "nerd_font_icons": true,
+    "show_prompt_line": false,
+    "line_wrap": false,
+    "auto_save_enabled": true,
+    "whitespace_spaces_trailing": true,
+    "ensure_final_newline_on_save": true,
+    "trim_trailing_whitespace_on_save": true,
+    "use_terminal_bg": true,
+    "show_tilde": true,
+    "auto_save_interval_secs": 5,
+    "whitespace_spaces_leading": true,
+    "show_menu_bar": false,
+    "restore_previous_session": true,
+    "tab_size": 2,
+    "show_vertical_scrollbar": false
+  },
+  "plugins": {
+    "dashboard": {
+      "enabled": true,
+      "settings": {
+        "autoOpen": false
+      },
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/dashboard.ts"
+    },
+    "asm-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/asm-lsp.ts"
+    },
+    "astro-lsp": {
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/astro-lsp.ts",
+      "enabled": true
+    },
+    "audit_mode": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/audit_mode.ts"
+    },
+    "bash-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/bash-lsp.ts"
+    },
+    "clangd-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/clangd-lsp.ts"
+    },
+    "clangd_support": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/clangd_support.ts"
+    },
+    "clojure-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/clojure-lsp.ts"
+    },
+    "cmake-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/cmake-lsp.ts"
+    },
+    "code-tour": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/code-tour.ts"
+    },
+    "csharp_support": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/csharp_support.ts"
+    },
+    "css-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/css-lsp.ts"
+    },
+    "dart-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/dart-lsp.ts"
+    },
+    "devcontainer": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/devcontainer.ts"
+    },
+    "diagnostics_panel": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/diagnostics_panel.ts"
+    },
+    "diff_nav": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/diff_nav.ts"
+    },
+    "elixir-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/elixir-lsp.ts"
+    },
+    "env-manager": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/env-manager.ts"
+    },
+    "erlang-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/erlang-lsp.ts"
+    },
+    "find_references": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/find_references.ts"
+    },
+    "flash": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/flash.ts"
+    },
+    "fsharp-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/fsharp-lsp.ts"
+    },
+    "gdscript-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/gdscript-lsp.ts"
+    },
+    "git_blame": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/git_blame.ts"
+    },
+    "git_explorer": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/git_explorer.ts"
+    },
+    "git_find_file": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/git_find_file.ts"
+    },
+    "git_grep": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/git_grep.ts"
+    },
+    "git_gutter": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/git_gutter.ts"
+    },
+    "git_log": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/git_log.ts"
+    },
+    "git_statusbar": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/git_statusbar.ts"
+    },
+    "gleam-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/gleam-lsp.ts"
+    },
+    "go-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/go-lsp.ts"
+    },
+    "goto_with_selection": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/goto_with_selection.ts"
+    },
+    "graphql-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/graphql-lsp.ts"
+    },
+    "haskell-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/haskell-lsp.ts"
+    },
+    "html-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/html-lsp.ts"
+    },
+    "java-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/java-lsp.ts"
+    },
+    "json-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/json-lsp.ts"
+    },
+    "julia-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/julia-lsp.ts"
+    },
+    "k8s-workspace": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/k8s-workspace.ts"
+    },
+    "kotlin-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/kotlin-lsp.ts"
+    },
+    "latex-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/latex-lsp.ts"
+    },
+    "live_diff": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/live_diff.ts"
+    },
+    "live_grep": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/live_grep.ts"
+    },
+    "lsp_navigation": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/lsp_navigation.ts"
+    },
+    "lua-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/lua-lsp.ts"
+    },
+    "markdown_compose": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/markdown_compose.ts"
+    },
+    "markdown_source": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/markdown_source.ts"
+    },
+    "marksman-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/marksman-lsp.ts"
+    },
+    "merge_conflict": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/merge_conflict.ts"
+    },
+    "nim-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/nim-lsp.ts"
+    },
+    "nix-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/nix-lsp.ts"
+    },
+    "nushell-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/nushell-lsp.ts"
+    },
+    "ocaml-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/ocaml-lsp.ts"
+    },
+    "odin-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/odin-lsp.ts"
+    },
+    "orchestrator": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/orchestrator.ts",
+      "settings": {
+        "defaultView": "compact"
+      }
+    },
+    "path_complete": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/path_complete.ts"
+    },
+    "perl-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/perl-lsp.ts"
+    },
+    "php-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/php-lsp.ts"
+    },
+    "pkg": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/pkg.ts"
+    },
+    "protobuf-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/protobuf-lsp.ts"
+    },
+    "python-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/python-lsp.ts"
+    },
+    "r-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/r-lsp.ts"
+    },
+    "ruby-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/ruby-lsp.ts"
+    },
+    "rust-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/rust-lsp.ts"
+    },
+    "scala-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/scala-lsp.ts"
+    },
+    "search_replace": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/search_replace.ts"
+    },
+    "slang-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/slang-lsp.ts"
+    },
+    "solidity-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/solidity-lsp.ts"
+    },
+    "sql-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/sql-lsp.ts"
+    },
+    "svelte-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/svelte-lsp.ts"
+    },
+    "swift-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/swift-lsp.ts"
+    },
+    "tab_actions": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/tab_actions.ts"
+    },
+    "tailwindcss-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/tailwindcss-lsp.ts"
+    },
+    "templ-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/templ-lsp.ts"
+    },
+    "terraform-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/terraform-lsp.ts"
+    },
+    "test_i18n": {
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/test_i18n.ts",
+      "enabled": false
+    },
+    "theme_editor": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/theme_editor.ts"
+    },
+    "toml-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/toml-lsp.ts"
+    },
+    "typescript-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/typescript-lsp.ts"
+    },
+    "typst-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/typst-lsp.ts"
+    },
+    "vi_mode": {
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/vi_mode.ts",
+      "settings": {
+        "autoStart": false,
+        "arrowKeys": true,
+        "searchWordUnderCursor": true
+      },
+      "enabled": false
+    },
+    "vue-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/vue-lsp.ts"
+    },
+    "welcome": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/welcome.ts"
+    },
+    "yaml-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/yaml-lsp.ts"
+    },
+    "zig-lsp": {
+      "enabled": true,
+      "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/zig-lsp.ts"
+    }
+  },
+  "file_explorer": {
+    "show_hidden": false,
+    "side": "right",
+    "tree_indicator_expanded": "",
+    "tree_indicator_collapsed": ""
+  },
+  "file_browser": {
+    "show_hidden": false
+  },
+  "lsp": {
+    "python": {
+      "command": "ruff",
+      "args": ["server"],
+      "initializationOptions": {
+        "settings": {
+          "configuration": {
+            "lint": {
+              "extendSelect": ["ALL"],
+              "ignore": [
+                "PLR2004", "S311", "TRY300", "TRY401", "TRY400", "RUF001",
+                "D101", "D100", "D203", "D213", "INP001", "D106", "D107",
+                "D102", "ERA001", "TRY003", "BLE001", "PERF203", "ANN401",
+                "TRY301", "FBT001", "FBT002", "S101", "DTZ005", "G201",
+                "RUF012", "CY001"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "keybindings": [
+    {
+      "key": "f",
+      "modifiers": ["alt", "shift"],
+      "action": "format_buffer"
+    },
+    {
+      "key": "Tab",
+      "modifiers": ["ctrl"],
+      "action": "next_window"
+    },
+    {
+      "key": "Tab",
+      "modifiers": ["ctrl", "shift"],
+      "action": "prev_window"
+    },
+    {
+      "key": "n",
+      "modifiers": ["alt", "shift"],
+      "action": "jump_to_next_error",
+      "when": "normal"
+    },
+    {
+      "key": "e",
+      "modifiers": ["ctrl"],
+      "action": "shell_command",
+      "when": "normal"
+    },
+    {
+      "key": "Enter",
+      "modifiers": ["alt"],
+      "action": "find_next",
+      "when": "normal"
+    },
+    {
+      "key": "Enter",
+      "modifiers": ["alt", "shift"],
+      "action": "find_previous",
+      "when": "normal"
+    },
+    {
+      "key": "Right",
+      "modifiers": ["alt"],
+      "action": "toggle_file_explorer",
+      "when": "file_explorer"
+    },
+    {
+      "key": "Right",
+      "modifiers": ["alt"],
+      "action": "toggle_file_explorer",
+      "when": "normal"
+    },
+    {
+      "key": "Left",
+      "modifiers": ["alt"],
+      "action": "orchestrator_dock_toggle",
+      "when": "global"
+    },
+    {
+      "key": "Delete",
+      "modifiers": ["alt"],
+      "action": "orchestrator_kill"
+    },
+    {
+      "key": " ",
+      "modifiers": ["ctrl", "shift"],
+      "action": "select_line",
+      "when": "normal"
+    },
+    {
+      "key": "*",
+      "modifiers": ["alt"],
+      "action": "orchestrator_open",
+      "when": ""
+    }
+  ]
+}

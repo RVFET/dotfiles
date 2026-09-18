@@ -1,0 +1,32 @@
+color:
+  when: always
+  theme: default
+
+icons:
+  when: always
+  theme: fancy
+  separator: "  "
+
+blocks:
+  - permission
+  - date
+  - size
+  - name
+
+sorting:
+  column: time
+  reverse: true
+  dir-grouping: none
+
+recursion:
+  enabled: true
+  depth: 1
+
+# layout: oneline
+layout: tree
+date: relative
+size: short
+permission: octal
+hyperlink: always
+no-symlink: false
+symlink-arrow: ⇒

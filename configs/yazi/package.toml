@@ -1,0 +1,14 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:zoom"
+rev = "bbac5e7"
+hash = "e8e279463ee99c940e6945a14cf4aa9e"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:piper"
+rev = "bbac5e7"
+hash = "e0d59bd47866a6a574c74574097e5070"
+
+[[flavor.deps]]
+use = "gosxrgxx/flexoki-dark"
+rev = "25d28ce"
+hash = "8e6dd7e42a127173e4535993d3e0e393"

@@ -1,0 +1,13 @@
+{
+    "config": {
+      "token": "",
+      "gitlab_token": {
+          "gitlab.com": ""
+      },
+      "codeberg_token": {
+          "codeberg.org": ""
+      },
+      "path": "~/.local/bin",
+      "pre_release": false
+    }
+}

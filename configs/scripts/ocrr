@@ -1,0 +1,45 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# dependencies = [
+#   "rapidocr-onnxruntime",
+# ]
+# ///
+
+import subprocess
+import sys
+from rapidocr_onnxruntime import RapidOCR
+
+TRANSLATE_ICON = (
+  "/usr/share/icons/"
+  "breeze/actions/24/gtk-select-font.svg"
+)
+
+def main():
+    try:
+        geom = subprocess.check_output(["slurp"], text=True).strip()
+    except subprocess.CalledProcessError:
+        sys.exit(0)
+
+    if not geom:
+        sys.exit(0)
+
+    try:
+        img_bytes = subprocess.check_output(["grim", "-g", geom, "-t", "png", "-"])
+    except subprocess.CalledProcessError as e:
+        subprocess.run(["notify-send", "-i", TRANSLATE_ICON, "OCR Error", f"grim failed: {e}"])
+        sys.exit(1)
+
+    engine = RapidOCR()
+    result, _ = engine(img_bytes)
+
+    if not result:
+        subprocess.run(["notify-send", "-i", TRANSLATE_ICON, "OCR", "No text detected.", "-t", "1500"])
+        sys.exit(0)
+
+    text = "\n".join([line[1] for line in result])
+
+    subprocess.run(["wl-copy"], input=text.encode("utf-8"), check=True)
+    subprocess.run(["notify-send", "-i", TRANSLATE_ICON, "OCR Copied", text[:80] + ("..." if len(text) > 80 else ""), "-t", "2000"])
+
+if __name__ == "__main__":
+    main()

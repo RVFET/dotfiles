@@ -1,0 +1,123 @@
+#:schema https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+version = 4
+final_space = true
+
+# ==========================================
+# ROW 1 (Username, Hostname, Git, Languages, Time, Execution Time)
+# ==========================================
+[[blocks]]
+type = "prompt"
+alignment = "left"
+newline = false
+
+  # --- USERNAME & HOSTNAME (SSH Only) ---
+  [[blocks.segments]]
+  type = "session"
+  style = "plain"
+  template = """\
+  {{ if .Root }}<red><b> {{ .UserName }}</b></>{{ else }}<green> {{ .UserName }}</>{{ end }}<#484848> │ </>\
+  {{ if .SSHSession }}<blue><b>󰣀 {{ .HostName }}</b></><#646464> │ </>{{ end }}\
+  """
+
+  # --- GIT Branch & Conditional Status ---
+  [[blocks.segments]]
+  type = "git"
+  style = "plain"
+  options = { fetch_status = true, branch_icon = "" }
+  template = """\
+  <green> {{ .HEAD }}</><#646464> │ </>\
+  {{ $statusList := list }}\
+  {{ if gt .Working.Unmerged 0 }}{{ $statusList = append $statusList "<red></>" }}{{ end }}\
+  {{ if gt .StashCount 0 }}{{ $statusList = append $statusList (printf "<cyan>󰏖 %d</>" .StashCount) }}{{ end }}\
+  {{ if gt .Working.Deleted 0 }}{{ $statusList = append $statusList "<red></>" }}{{ end }}\
+  {{ if gt .Working.Modified 0 }}{{ $statusList = append $statusList "<yellow></>" }}{{ end }}\
+  {{ $stagedCount := add .Staging.Added .Staging.Modified .Staging.Deleted }}\
+  {{ if gt $stagedCount 0 }}{{ $statusList = append $statusList (printf "<green> %d</>" $stagedCount) }}{{ end }}\
+  {{ if gt .Working.Untracked 0 }}{{ $statusList = append $statusList "<blue></>" }}{{ end }}\
+  {{ if and (gt .Ahead 0) (eq .Behind 0) }}{{ $statusList = append $statusList (printf "<yellow> %d</>" .Ahead) }}\
+  {{ else if and (gt .Behind 0) (eq .Ahead 0) }}{{ $statusList = append $statusList (printf "<yellow> %d</>" .Behind) }}\
+  {{ else if and (gt .Ahead 0) (gt .Behind 0) }}{{ $statusList = append $statusList "<red>󰃻</>" }}\
+  {{ else if and (eq .Working.Changed false) (eq .Staging.Changed false) (eq .Ahead 0) (eq .Behind 0) }}{{ $statusList = append $statusList "<green>󰄬</>" }}{{ end }}\
+  {{ if gt (len $statusList) 0 }}<#646464>[ </>{{ join "<#646464>﹣</>" $statusList }}<#646464> ] │ </>\
+  {{ end }}\
+  """
+
+  # --- NODE ---
+  [[blocks.segments]]
+  type = "node"
+  style = "plain"
+  foreground = "green"
+  options = { display_mode = "context", cache_duration = "1h" }
+  template = " v{{ .Full }}<#646464> │ </>"
+
+  # --- BUN ---
+  [[blocks.segments]]
+  type = "bun"
+  style = "plain"
+  foreground = "#fbc2eb"
+  options = { display_mode = "context", cache_duration = "1h" }
+  template = " v{{ .Full }}<#646464> │ </>"
+
+  # --- RUST ---
+  [[blocks.segments]]
+  type = "rust"
+  style = "plain"
+  foreground = "#e24d2a"
+  options = { display_mode = "context", cache_duration = "1h" }
+  template = " v{{ .Full }}<#646464> │ </>"
+
+  # --- GOLANG ---
+  [[blocks.segments]]
+  type = "go"
+  style = "plain"
+  foreground = "#00aed8"
+  options = { display_mode = "context", cache_duration = "1h" }
+  template = " v{{ .Full }}<#646464> │ </>"
+
+  # --- PYTHON ---
+  [[blocks.segments]]
+  type = "python"
+  style = "plain"
+  foreground = "yellow"
+  options = { display_mode = "context", fetch_virtual_env = true, cache_duration = "1h" }
+  template = " v{{ .Full }}{{ if .Venv }} (in {{ .Venv }}){{ end }}<#646464> │ </>"
+
+  # --- TIME ---
+  [[blocks.segments]]
+  type = "time"
+  style = "plain"
+  foreground = "#848484"
+  options = { time_format = "15:04:05" }
+  template = "{{ .CurrentDate | date .Format }}"
+
+  # --- EXECUTION TIME ---
+  [[blocks.segments]]
+  type = "executiontime"
+  style = "plain"
+  foreground = "yellow"
+  options = { threshold = 100, style = "austin" }
+  template = "<#646464> │ </>󰚭 {{ .FormattedMs }}"
+
+
+# ==========================================
+# ROW 2 (Directory and Character Symbol)
+# ==========================================
+[[blocks]]
+type = "prompt"
+alignment = "left"
+newline = true
+
+  # --- DIRECTORY ---
+  [[blocks.segments]]
+  type = "path"
+  style = "plain"
+  foreground = "yellow"
+  options = { style = "agnoster_short", max_depth = 2, folder_icon = "...", folder_separator_icon = "/", home_icon = "~", hide_root_location = true }
+  template = "<#646464>└╴</>at  {{ .Path }}{{ if not .Writable }} 󰍁{{ end }} "
+
+  # --- CHARACTER (Success/Error exit indicator) ---
+  [[blocks.segments]]
+  type = "status"
+  style = "plain"
+  options = { always_enabled = true }
+  template = "{{ if eq .Code 0 }}<#646464></>{{ else }}<red><b>󰅖</b></>{{ end }}"

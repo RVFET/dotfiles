@@ -1,0 +1,63 @@
+# === SCROLLING ===
+[scrolling]
+history = 50000
+multiplier = 5
+
+# === WINDOW ===
+[window]
+decorations = "None"
+opacity = 0.95
+blur = true
+dynamic_title = false
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 20
+y = 20
+
+# === FONT ===
+[font]
+size = 12
+builtin_box_drawing = false
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+# === KEYBOARD ===
+[keyboard]
+bindings = [
+	{ key = "C", mods = "Alt", action = "Copy" },
+	{ key = "V", mods = "Control", action = "Paste" },
+	{ key = "L", mods = "Control", chars = "clear\n" },
+	{ key = "Q", mods = "Control|Shift", action = "Quit" },
+	{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+	{ key = "Enter", mods = "Control", action = "ToggleFullscreen" },
+	{ key = "ArrowUp", mods = "Control", action = "ScrollPageUp" },
+	{ key = "ArrowDown", mods = "Control", action = "ScrollPageDown" },
+]
+
+# === MOUSE ===
+[mouse]
+bindings = [
+	{ mouse = "Middle", action = "Copy" },
+]
+
+# === CURSOR ===
+[cursor]
+blink_interval = 500
+
+[cursor.style]
+shape = "Beam"
+blinking = "Always"

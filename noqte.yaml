@@ -1,0 +1,677 @@
+# ==============================================================================
+# noqte Configuration Manifest
+# ==============================================================================
+
+repo_path: "."
+
+settings:
+  backup: true
+  git_backup: true
+  preflight: true
+
+# ==============================================================================
+# Packages Layer
+# ==============================================================================
+packages:
+  # CLI & Core Utilities
+  - name: "eza"
+  - name: "bat"
+  - name: "fzf"
+  - name: "ripgrep"
+  - name: "rage"
+  - name: "fd"
+  - name: "zoxide"
+  - name: "sd"
+  - name: "choose"
+    mac: "choose-rust"
+  - name: "fx"
+  - name: "xh"
+  - name: "jq"
+  - name: "jqp"
+  - name: "tealdeer"
+  - name: "hyperfine"
+  - name: "fastfetch"
+  - name: "gdu"
+  - name: "fclones"
+  - name: "yazi"
+  - name: "asciinema"
+  - name: "croc"
+  - name: "cloudflared"
+  - name: "rclone"
+  - name: "rsync"
+  - name: "github-cli"
+    mac: "gh"
+  - name: "socat"
+  - name: "iperf3"
+  - name: "conntrack-tools"
+    os: ["linux"]
+  - name: "inotify-tools"
+    os: ["linux"]
+  - name: "evtest"
+    os: ["linux"]
+  - name: "wev"
+    os: ["linux"]
+  - name: "tmux"
+  - name: "fish"
+  - name: "zsh"
+  - name: "aria2"
+  - name: "wget"
+  - name: "micro"
+  - name: "wireguard-tools"
+  - name: "cava"
+
+  # Security
+  - name: "gobuster"
+  - name: "sqlmap"
+  - name: "hashcat"
+  - name: "nmap"
+  - name: "patchelf"
+  - name: "hexyl"
+  - name: "difftastic"
+  - name: "bpf"
+    os: ["linux"]
+  - name: "guestfs-tools"
+    os: ["linux"]
+  - name: "wireshark-qt"
+    mac:
+      name: "wireshark"
+      cask: true
+
+  # Compilers & Dev tools
+  - name: "rustup"
+    mac: "rustup-init"
+  - name: "go"
+  - name: "ruff"
+  - name: "uv"
+  - name: "prettier"
+  - name: "cloc"
+  - name: "duckdb"
+  - name: "cmake"
+  - name: "meson"
+  - name: "ninja"
+
+  # Containers & Virtualization
+  - name: "podman"
+  - name: "podman-compose"
+  - name: "qemu-full"
+    mac: "qemu"
+  - name: "virt-manager"
+    os: ["linux"]
+  - name: "virt-viewer"
+    os: ["linux"]
+
+  # Desktop GUI Applications
+  - name: "ghostty"
+    mac:
+      cask: true
+  - name: "alacritty"
+    mac:
+      cask: true
+  - name: "zen-browser-bin"
+    mac:
+      name: "zen-browser"
+      cask: true
+  - name: "brave-bin"
+    mac:
+      name: "brave-browser"
+      cask: true
+  - name: "mullvad-browser-bin"
+    mac:
+      name: "mullvad-browser"
+      cask: true
+  - name: "torbrowser-launcher"
+    mac:
+      name: "tor-browser"
+      cask: true
+  - name: "mullvad-vpn"
+    mac:
+      name: "mullvadvpn"
+      cask: true
+  - name: "mullvad-vpn-daemon"
+    os: ["linux"]
+  - name: "vscodium"
+    mac:
+      cask: true
+  - name: "obs-studio"
+    mac:
+      name: "obs"
+      cask: true
+  - name: "onlyoffice-bin"
+    mac:
+      name: "onlyoffice"
+      cask: true
+  - name: "steam"
+    mac:
+      cask: true
+  - name: "yt-dlp"
+  - name: "mpv"
+    mac:
+      cask: true
+  - name: "android-tools"
+    mac:
+      name: "android-platform-tools"
+      cask: true
+  - name: "geany"
+    os: ["linux"]
+  - name: "oculante"
+    os: ["linux"]
+  - name: "wine-staging"
+    os: ["linux"]
+  - name: "mpv-mpris"
+    os: ["linux"]
+  - name: "mpvpaper"
+    os: ["linux"]
+  - name: "font-manager"
+    os: ["linux"]
+  - name: "nemo"
+    os: ["linux"]
+  - name: "nemo-image-converter"
+    os: ["linux"]
+  - name: "kio-admin"
+    os: ["linux"]
+
+  # Hardware & Drivers
+  - name: "lenovolegionlinux-dkms-git"
+    os: ["linux"]
+  - name: "lenovolegionlinux-git"
+    os: ["linux"]
+  - name: "intel-undervolt"
+    os: ["linux"]
+  - name: "intel-gpu-tools"
+    os: ["linux"]
+  - name: "ddcutil"
+    os: ["linux"]
+  - name: "keyd"
+    os: ["linux"]
+  - name: "cuda"
+    os: ["linux"]
+  - name: "cudnn"
+    os: ["linux"]
+  - name: "nvidia-container-toolkit"
+    os: ["linux"]
+  - name: "nvidia-open-dkms"
+    os: ["linux"]
+  - name: "libva-nvidia-driver"
+    os: ["linux"]
+  - name: "nvtop"
+    os: ["linux"]
+
+  # Hyprland & Shell
+  - name: "hyprland"
+    os: ["linux"]
+  - name: "uwsm"
+    os: ["linux"]
+  - name: "extra/dms-shell"
+    os: ["linux"]
+  - name: "dms-shell-hyprland"
+    os: ["linux"]
+  - name: "quickshell"
+    os: ["linux"]
+  - name: "matugen"
+    os: ["linux"]
+  - name: "nwg-displays"
+    os: ["linux"]
+  - name: "nwg-look"
+    os: ["linux"]
+  - name: "hyprsunset"
+    os: ["linux"]
+  - name: "satty"
+    os: ["linux"]
+  - name: "skim"
+    os: ["linux"]
+  - name: "cliphist"
+    os: ["linux"]
+  - name: "wl-clipboard"
+    os: ["linux"]
+  - name: "playerctl"
+    os: ["linux"]
+  - name: "dunst"
+    os: ["linux"]
+  - name: "mate-polkit"
+    os: ["linux"]
+
+  # System Plumbing & CachyOS Baseline (Linux)
+  - name: "accountsservice"
+    os: ["linux"]
+  - name: "adw-gtk-theme"
+    os: ["linux"]
+  - name: "alsa-firmware"
+    os: ["linux"]
+  - name: "ananicy-cpp"
+    os: ["linux"]
+  - name: "base"
+    os: ["linux"]
+  - name: "base-devel"
+    os: ["linux"]
+  - name: "bind"
+    os: ["linux"]
+  - name: "blueman"
+    os: ["linux"]
+  - name: "bluez"
+    os: ["linux"]
+  - name: "bluez-utils"
+    os: ["linux"]
+  - name: "btrfs-progs"
+    os: ["linux"]
+  - name: "cachyos-ananicy-rules"
+    os: ["linux"]
+  - name: "cachyos-keyring"
+    os: ["linux"]
+  - name: "cachyos-mirrorlist"
+    os: ["linux"]
+  - name: "cachyos-settings"
+    os: ["linux"]
+  - name: "cachyos-v3-mirrorlist"
+    os: ["linux"]
+  - name: "cachyos-v4-mirrorlist"
+    os: ["linux"]
+  - name: "cli11"
+    os: ["linux"]
+  - name: "cpio"
+    os: ["linux"]
+  - name: "dkms"
+    os: ["linux"]
+  - name: "dnscrypt-proxy"
+    os: ["linux"]
+  - name: "efibootmgr"
+    os: ["linux"]
+  - name: "ffmpegthumbs"
+    os: ["linux"]
+  - name: "flatpak"
+    os: ["linux"]
+  - name: "gnome-keyring"
+    os: ["linux"]
+  - name: "google-breakpad"
+    os: ["linux"]
+  - name: "gpu-screen-recorder"
+    os: ["linux"]
+  - name: "grim"
+    os: ["linux"]
+  - name: "gst-plugin-pipewire"
+    os: ["linux"]
+  - name: "htop"
+    os: ["linux"]
+  - name: "inetutils"
+    os: ["linux"]
+  - name: "intel-ucode"
+    os: ["linux"]
+  - name: "iwd"
+    os: ["linux"]
+  - name: "jemalloc"
+    os: ["linux"]
+  - name: "less"
+    os: ["linux"]
+  - name: "libpng12"
+    os: ["linux"]
+  - name: "libpulse"
+    os: ["linux"]
+  - name: "linux"
+    os: ["linux"]
+  - name: "linux-cachyos-bore"
+    os: ["linux"]
+  - name: "linux-cachyos-bore-headers"
+    os: ["linux"]
+  - name: "linux-firmware"
+    os: ["linux"]
+  - name: "linux-headers"
+    os: ["linux"]
+  - name: "lshw"
+    os: ["linux"]
+  - name: "man-db"
+    os: ["linux"]
+  - name: "nano"
+    os: ["linux"]
+  - name: "network-manager-applet"
+    os: ["linux"]
+  - name: "networkmanager"
+    os: ["linux"]
+  - name: "noto-fonts"
+    os: ["linux"]
+  - name: "noto-fonts-cjk"
+    os: ["linux"]
+  - name: "noto-fonts-emoji"
+    os: ["linux"]
+  - name: "paru"
+    os: ["linux"]
+  - name: "pavucontrol"
+    os: ["linux"]
+  - name: "pipewire"
+    os: ["linux"]
+  - name: "pipewire-alsa"
+    os: ["linux"]
+  - name: "pipewire-jack"
+    os: ["linux"]
+  - name: "pipewire-pulse"
+    os: ["linux"]
+  - name: "plocate"
+    os: ["linux"]
+  - name: "python-pyqt6"
+    os: ["linux"]
+  - name: "qt5-wayland"
+    os: ["linux"]
+  - name: "qt5-webengine"
+    os: ["linux"]
+  - name: "qt5-websockets"
+    os: ["linux"]
+  - name: "qt6-wayland"
+    os: ["linux"]
+  - name: "qt6ct"
+    os: ["linux"]
+  - name: "reflector"
+    os: ["linux"]
+  - name: "s-tui"
+    os: ["linux"]
+  - name: "sddm"
+    os: ["linux"]
+  - name: "seahorse"
+    os: ["linux"]
+  - name: "slurp"
+    os: ["linux"]
+  - name: "smartmontools"
+    os: ["linux"]
+  - name: "snap-pac"
+    os: ["linux"]
+  - name: "snapper"
+    os: ["linux"]
+  - name: "sof-firmware"
+    os: ["linux"]
+  - name: "stress"
+    os: ["linux"]
+  - name: "systemd-resolvconf"
+    os: ["linux"]
+  - name: "ttf-roboto"
+    os: ["linux"]
+  - name: "tuned"
+    os: ["linux"]
+  - name: "unarchiver"
+    os: ["linux"]
+  - name: "unzip"
+    os: ["linux"]
+  - name: "vim"
+    os: ["linux"]
+  - name: "wireless_tools"
+    os: ["linux"]
+  - name: "wireplumber"
+    os: ["linux"]
+  - name: "xdg-desktop-portal-gtk"
+    os: ["linux"]
+  - name: "xdg-desktop-portal-hyprland"
+    os: ["linux"]
+  - name: "xdg-utils"
+    os: ["linux"]
+  - name: "xorg-server"
+    os: ["linux"]
+  - name: "xorg-xinit"
+    os: ["linux"]
+  - name: "xorg-xinput"
+    os: ["linux"]
+  - name: "yad"
+    os: ["linux"]
+  - name: "zenity"
+    os: ["linux"]
+  - name: "zram-generator"
+    os: ["linux"]
+
+  # Flatpak Layer
+  - name: "chat.simplex.simplex"
+    manager: "flatpak"
+    mac:
+      name: "simplex"
+      cask: true
+  - name: "dev.vencord.Vesktop"
+    manager: "flatpak"
+    mac:
+      name: "vesktop"
+      cask: true
+  - name: "com.anydesk.Anydesk"
+    manager: "flatpak"
+    mac:
+      name: "anydesk"
+      cask: true
+  - name: "com.icons8.Lunacy"
+    manager: "flatpak"
+    mac:
+      name: "lunacy"
+      cask: true
+  - name: "com.notesnook.Notesnook"
+    manager: "flatpak"
+    mac:
+      name: "notesnook"
+      cask: true
+  - name: "com.usebruno.Bruno"
+    manager: "flatpak"
+    mac:
+      name: "bruno"
+      cask: true
+  - name: "io.beekeeperstudio.Studio"
+    manager: "flatpak"
+    mac:
+      name: "beekeeper-studio"
+      cask: true
+  - name: "io.ente.auth"
+    manager: "flatpak"
+    mac:
+      name: "ente-auth"
+      cask: true
+  - name: "io.httpie.Httpie"
+    manager: "flatpak"
+    mac:
+      name: "httpie"
+      cask: true
+  - name: "org.localsend.localsend_app"
+    manager: "flatpak"
+    mac:
+      name: "localsend"
+      cask: true
+  - name: "com.github.tchx84.Flatseal"
+    manager: "flatpak"
+    os: ["linux"]
+  - name: "com.github.wwmm.easyeffects"
+    manager: "flatpak"
+    os: ["linux"]
+  - name: "com.vysp3r.ProtonPlus"
+    manager: "flatpak"
+    os: ["linux"]
+  - name: "it.belloworld.mercurygram"
+    manager: "flatpak"
+    os: ["linux"]
+
+  # Install Release (ir) Layer
+  - name: "https://github.com/esrlabs/chipmunk"
+    manager: "ir"
+  - name: "https://github.com/vi/websocat"
+    manager: "ir"
+  - name: "https://github.com/maaslalani/fast"
+    manager: "ir"
+  - name: "https://github.com/sinelaw/fresh"
+    manager: "ir"
+  - name: "https://github.com/d10n/mullvad-tui"
+    manager: "ir"
+  - name: "https://github.com/tomnomnom/anew"
+    manager: "ir"
+  - name: "https://github.com/cheat/cheat"
+    manager: "ir"
+  - name: "https://github.com/ffuf/ffuf"
+    manager: "ir"
+  - name: "https://github.com/projectdiscovery/nuclei"
+    manager: "ir"
+  - name: "https://github.com/wakatime/wakatime-cli"
+    manager: "ir"
+  - name: "https://github.com/starship/starship"
+    manager: "ir"
+
+# ==============================================================================
+# Dotfiles Configurations Layer
+# ==============================================================================
+configs:
+  # Directories
+  - name: ".zsh"
+    dest: "~/.zsh"
+    encrypted: true
+
+  - name: "hypr/dms"
+    dest: "~/.config/hypr/dms"
+    os: ["linux"]
+
+  - name: "yazi"
+    dest: "~/.config/yazi"
+    include:
+      - "**/*.{toml,yaml,yml,xml,json,lua}"
+
+  - name: "Brainstorming"
+    dest: "~/Brainstorming"
+    encrypted: true
+
+  - name: "fastfetch"
+    dest: "~/.config/fastfetch"
+
+  - name: "fish"
+    dest: "~/.config/fish"
+    exclude:
+      - "completions/"
+      - "conf.d/"
+      - "fish_variables"
+
+  - name: "oh-my-posh"
+    dest: "~/.config/oh-my-posh"
+
+  - name: "fresh/config.json"
+    dest: "~/.config/fresh/config.json"
+
+  - name: "ghostty"
+    dest: "~/.config/ghostty"
+
+  - name: "scripts"
+    dest: "~/scripts"
+
+  - name: "micro/colorschemes"
+    dest: "~/.config/micro/colorschemes"
+
+  - name: "micro/syntax"
+    dest: "~/.config/micro/syntax"
+
+  - name: "micro/plug"
+    dest: "~/.config/micro/plug"
+    overwrite: false
+    include:
+      - "**/*.{yaml,yml,lua,json}"
+      - "**/help/"
+      - "**/snippets/snippets/"
+
+  # Files
+  - name: ".zshrc"
+    dest: "~/.zshrc"
+
+  - name: ".zshenv"
+    dest: "~/.zshenv"
+    encrypted: true
+
+  - name: ".zsh_history"
+    dest: "~/.zsh_history"
+    encrypted: true
+
+  - name: ".wakatime.cfg"
+    dest: "~/.wakatime.cfg"
+    encrypted: true
+
+  - name: "fish_history"
+    dest: "~/.local/share/fish/fish_history"
+    encrypted: true
+
+  - name: "install_release/config.json"
+    dest: "~/.config/install_release/config.json"
+
+  - name: "satty/config.toml"
+    dest: "~/.config/satty/config.toml"
+
+  # Hyprland
+  - name: "hypr/hyprland.lua"
+    dest: "~/.config/hypr/hyprland.lua"
+    os: ["linux"]
+
+  - name: "hypr/bindings.lua"
+    dest: "~/.config/hypr/bindings.lua"
+    os: ["linux"]
+
+  - name: "hypr/monitors.lua"
+    dest: "~/.config/hypr/monitors.lua"
+    os: ["linux"]
+
+  # DMS
+  - name: "DankMaterialShell/clsettings.json"
+    dest: "~/.config/DankMaterialShell/clsettings.json"
+
+  - name: "DankMaterialShell/plugin_settings.json"
+    dest: "~/.config/DankMaterialShell/plugin_settings.json"
+
+  - name: "DankMaterialShell/plugins.lock.json"
+    dest: "~/.config/DankMaterialShell/plugins.lock.json"
+
+  - name: "DankMaterialShell/settings.json"
+    dest: "~/.config/DankMaterialShell/settings.json"
+
+  # Electron shenanigans
+  - name: "brave-flags.conf"
+    dest: "~/.config/brave-flags.conf"
+    os: ["linux"]
+
+  - name: "chrome-flags.conf"
+    dest: "~/.config/chrome-flags.conf"
+    os: ["linux"]
+
+  - name: "chromium-flags.conf"
+    dest: "~/.config/chromium-flags.conf"
+    os: ["linux"]
+
+  - name: "code-flags.conf"
+    dest: "~/.config/code-flags.conf"
+    os: ["linux"]
+
+  - name: "rvfet-assets"
+    dest: "~/Pictures/Assets"
+
+  - name: "lsd-config.yaml"
+    dest: "~/.config/lsd/config.yaml"
+
+  - name: "lite-xl-user_settings.lua"
+    dest: "~/.config/lite-xl/user_settings.lua"
+
+  - name: "fastfetch-config.jsonc"
+    dest: "~/.config/fastfetch/config.jsonc"
+
+  - name: "alacritty.toml"
+    dest: "~/.config/alacritty/alacritty.toml"
+
+  - name: "starship.toml"
+    dest: "~/.config/starship.toml"
+
+  - name: "alacritty-default-theme.json"
+    dest: "~/.config/tilix/schemes/alacritty-default-theme.json"
+
+  - name: ".tmux.conf"
+    dest: "~/.tmux.conf"
+
+  - name: "micro/settings.json"
+    dest: "~/.config/micro/settings.json"
+
+  - name: "micro/bindings.json"
+    dest: "~/.config/micro/bindings.json"
+
+  - name: "etc/keyd/default.conf"
+    dest: "/etc/keyd/default.conf"
+    os: ["linux"]
+
+  - name: "etc/dnscrypt-proxy/dnscrypt-proxy.toml"
+    dest: "/etc/dnscrypt-proxy/dnscrypt-proxy.toml"
+    os: ["linux"]
+    encrypted: true
+
+  - name: "etc/systemd/resolved.conf.d/dns.conf"
+    dest: "/etc/systemd/resolved.conf.d/dns.conf"
+    os: ["linux"]
+    encrypted: true
+
+  - name: "etc/NetworkManager/conf.d/dns.conf"
+    dest: "/etc/NetworkManager/conf.d/dns.conf"
+    os: ["linux"]
+    encrypted: true

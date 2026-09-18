@@ -1,0 +1,35 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "dankBatteryAlerts": {
+      "repo": "https://github.com/AvengeMedia/dms-plugins",
+      "path": "DankBatteryAlerts",
+      "commit": "6fc7f25bfb24f93b6488fb8a36ed67b5f242abdb"
+    },
+    "dankDesktopWeather": {
+      "repo": "https://github.com/AvengeMedia/dms-plugins",
+      "path": "DankDesktopWeather",
+      "commit": "6fc7f25bfb24f93b6488fb8a36ed67b5f242abdb"
+    },
+    "dankRssWidget": {
+      "repo": "https://github.com/BrendonJL/dms-rss-widget",
+      "commit": "3d277abd34db8f9efb28a75924d7b28aa0851eab"
+    },
+    "dockerManager": {
+      "repo": "https://github.com/LuckShiba/DmsDockerManager",
+      "commit": "255f46794b6e3a5f5e842fe1330db3869deddc09"
+    },
+    "gpuMonitor": {
+      "repo": "https://github.com/rollecode/dms-gpu-monitor",
+      "commit": "6a725d2c292c4cd8c7da38ed0e40ad77eb77ec25"
+    },
+    "mediaPlayer": {
+      "repo": "https://github.com/arrifat346afs/mediaPlayer",
+      "commit": "56ec160ed3fe32ad55b920ff462727d918b6eb51"
+    },
+    "screenRecorderYS": {
+      "repo": "https://github.com/smithyyang/dms-screen-recorder",
+      "commit": "e3014914bd0efae92ba525dff52919eea39b58c3"
+    }
+  }
+}

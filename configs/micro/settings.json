@@ -1,0 +1,14 @@
+{
+    "autosu": true,
+    "colorscheme": "rvfet",
+    "indentchar": "space",
+    "keepautoindent": true,
+    "mkparents": true,
+    "parsecursor": true,
+    "relativeruler": true,
+    "rmtrailingws": true,
+    "saveundo": true,
+    "scrollbar": true,
+    "tabhighlight": true,
+    "tabsize": 2
+}

@@ -1,0 +1,639 @@
+{
+  "currentThemeName": "dynamic",
+  "currentThemeCategory": "dynamic",
+  "customThemeFile": "/home/rvfet/.config/DankMaterialShell/themes/darkmatter/theme.json",
+  "registryThemeVariants": {
+    "flexoki": "green",
+    "deepmono": {
+      "dark": {
+        "flavor": "mono",
+        "accent": "graphite"
+      }
+    }
+  },
+  "matugenScheme": "scheme-smart",
+  "matugenSourceMode": "value",
+  "dockTransparency": 0.9,
+  "widgetBackgroundColor": "sc",
+  "cornerRadius": 32,
+  "clockFormat": "12h",
+  "showSeconds": true,
+  "padHours12Hour": true,
+  "animationSpeed": 4,
+  "customAnimationDuration": 151,
+  "reduceMotion": true,
+  "springBounce": 0,
+  "enableRippleEffects": false,
+  "animationVariant": 1,
+  "m3ElevationEnabled": false,
+  "blurEnabled": true,
+  "blurForegroundLayers": false,
+  "blurBorderOpacity": 0.5,
+  "controlCenterShowBrightnessIcon": true,
+  "controlCenterShowMicIcon": true,
+  "privacyShowMicIcon": true,
+  "privacyShowCameraIcon": true,
+  "privacyShowScreenShareIcon": true,
+  "controlCenterWidgets": [
+    {
+      "id": "volumeSlider",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "brightnessSlider",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "wifi",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "bluetooth",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "audioOutput",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "audioInput",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "nightMode",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "darkMode",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "builtin_vpn",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "idleInhibitor",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "diskUsage",
+      "enabled": true,
+      "width": 100,
+      "instanceId": "mk187y8uyzxhz57hrnuoc3z6ohxxyl",
+      "mountPath": "/"
+    }
+  ],
+  "showWorkspaceIndex": true,
+  "showWorkspaceName": true,
+  "showWorkspaceApps": true,
+  "maxWorkspaceIcons": 10,
+  "workspaceAppIconSizeOffset": 3,
+  "groupWorkspaceApps": false,
+  "workspaceFollowFocus": true,
+  "showOccupiedWorkspacesOnly": true,
+  "workspaceActiveAppHighlightEnabled": true,
+  "runningAppsCurrentWorkspace": false,
+  "centeringMode": "geometric",
+  "clockDateFormat": "yyyy-M-d",
+  "appLauncherViewMode": "grid",
+  "spotlightModalViewMode": "grid",
+  "spotlightSectionViewModes": {
+    "apps": "list"
+  },
+  "appDrawerSectionViewModes": {
+    "apps": "list"
+  },
+  "dankLauncherV2BorderThickness": 1,
+  "dankLauncherV2BorderColor": "outline",
+  "networkPreference": "wifi",
+  "cursorSettings": {
+    "theme": "macOS",
+    "size": 24,
+    "niri": {
+      "hideWhenTyping": false,
+      "hideAfterInactiveMs": 0
+    },
+    "hyprland": {
+      "hideOnKeyPress": false,
+      "hideOnTouch": false,
+      "inactiveTimeout": 0
+    },
+    "dwl": {
+      "cursorHideTimeout": 0
+    }
+  },
+  "launcherLogoMode": "custom",
+  "launcherLogoCustomPath": "/home/rvfet/Pictures/Assets/rvfet-logo-filled.svg",
+  "launcherLogoSizeOffset": -5,
+  "monoFontFamily": "JetBrainsMono Nerd Font",
+  "textRenderType": 1,
+  "notepadFontSize": 16,
+  "notepadShowLineNumbers": true,
+  "notepadLastCustomTransparency": 1,
+  "fadeToLockEnabled": false,
+  "fadeToDpmsEnabled": false,
+  "matugenTemplateNiri": false,
+  "matugenTemplateMangowc": false,
+  "matugenTemplateFcitx5": false,
+  "matugenTemplateQtengine": false,
+  "matugenTemplateFirefox": false,
+  "matugenTemplatePywalfox": false,
+  "matugenTemplateZenBrowser": false,
+  "matugenTemplateVencord": false,
+  "matugenTemplateEquibop": false,
+  "matugenTemplateKitty": false,
+  "matugenTemplateFoot": false,
+  "matugenTemplateAlacritty": false,
+  "matugenTemplateWezterm": false,
+  "matugenTemplateDgop": false,
+  "matugenTemplateEmacs": false,
+  "matugenTemplateZed": false,
+  "showDock": true,
+  "dockAutoHide": true,
+  "dockUseOverlayLayer": true,
+  "dockGroupByApp": true,
+  "dockPosition": 2,
+  "dockSpacing": 8,
+  "dockMargin": 10,
+  "dockIconSize": 34,
+  "dockIndicatorStyle": "line",
+  "dockBorderEnabled": true,
+  "dockBorderColor": "primary",
+  "dockBorderOpacity": 0.2,
+  "dockBorderThickness": 2,
+  "dockShowTrash": true,
+  "dockTrashFileManager": "nemo",
+  "modalDarkenBackground": false,
+  "notificationCompactMode": true,
+  "notificationShowTimeoutBar": true,
+  "notificationPopupPosition": 3,
+  "notificationAnimationSpeed": 3,
+  "notificationHistoryMaxCount": 200,
+  "notificationHistoryMaxAgeDays": 30,
+  "osdAlwaysShowValue": true,
+  "osdMediaPlaybackEnabled": true,
+  "powerActionHoldDuration": 0.75,
+  "powerMenuActions": [
+    "reboot",
+    "logout",
+    "poweroff",
+    "suspend"
+  ],
+  "powerMenuGridLayout": true,
+  "screenPreferences": {
+    "dock": [
+      "all"
+    ],
+    "wallpaper": [
+      "all"
+    ]
+  },
+  "showOnLastDisplay": {
+    "dock": false
+  },
+  "barConfigs": [
+    {
+      "id": "default",
+      "name": "Main Bar",
+      "enabled": true,
+      "position": 1,
+      "screenPreferences": [
+        "all"
+      ],
+      "showOnLastDisplay": true,
+      "leftWidgets": [
+        {
+          "id": "launcherButton",
+          "enabled": true
+        },
+        {
+          "id": "cpuTemp",
+          "enabled": true,
+          "minimumWidth": false
+        },
+        {
+          "id": "cpuUsage",
+          "enabled": true,
+          "minimumWidth": false
+        },
+        {
+          "id": "gpuMonitor",
+          "enabled": true
+        },
+        {
+          "id": "memUsage",
+          "enabled": true,
+          "minimumWidth": false,
+          "showSwap": false,
+          "showInGb": true
+        },
+        {
+          "id": "separator",
+          "enabled": true
+        },
+        {
+          "id": "workspaceSwitcher",
+          "enabled": true
+        }
+      ],
+      "centerWidgets": [
+        {
+          "id": "music",
+          "enabled": true,
+          "mediaSize": 2
+        },
+        {
+          "id": "clock",
+          "enabled": true,
+          "clockCompactMode": false,
+          "clockDateOrder": "timeFirst"
+        },
+        {
+          "id": "notificationButton",
+          "enabled": true
+        }
+      ],
+      "rightWidgets": [
+        {
+          "id": "screenRecorderYS",
+          "enabled": true
+        },
+        {
+          "id": "clipboard",
+          "enabled": true
+        },
+        {
+          "id": "colorPicker",
+          "enabled": true
+        },
+        {
+          "id": "dockerManager",
+          "enabled": true
+        },
+        {
+          "id": "keyboard_layout_name",
+          "enabled": true,
+          "keyboardLayoutNameCompactMode": true,
+          "keyboardLayoutNameShowIcon": false
+        },
+        {
+          "id": "systemTray",
+          "enabled": true,
+          "trayUseInlineExpansion": true,
+          "trayAutoOverflow": true,
+          "trayMaxVisibleItems": 3
+        },
+        {
+          "id": "separator",
+          "enabled": true
+        },
+        {
+          "id": "battery",
+          "enabled": true,
+          "showBatteryPercent": true,
+          "showBatteryPercentOnlyOnBattery": false,
+          "showBatteryTime": true,
+          "showBatteryTimeOnlyOnBattery": false,
+          "batteryPillPercentSign": true,
+          "batteryStyle": "icon",
+          "showBatteryPowerCharging": true,
+          "showBatteryPowerDischarging": true
+        },
+        {
+          "id": "controlCenterButton",
+          "enabled": true,
+          "showBrightnessPercent": false,
+          "showBatteryIcon": false,
+          "showPrinterIcon": false,
+          "showMicPercent": false,
+          "showAudioPercent": true,
+          "showBrightnessIcon": false,
+          "showAudioIcon": true,
+          "showIdleInhibitorIcon": false,
+          "showDoNotDisturbIcon": false
+        }
+      ],
+      "spacing": 0,
+      "innerPadding": 8,
+      "bottomGap": 0,
+      "transparency": 0.8,
+      "widgetTransparency": 0.5,
+      "squareCorners": true,
+      "noBackground": false,
+      "gothCornersEnabled": true,
+      "gothCornerRadiusOverride": true,
+      "gothCornerRadiusValue": 32,
+      "borderEnabled": false,
+      "borderColor": "surfaceText",
+      "borderOpacity": 1,
+      "borderThickness": 2,
+      "widgetOutlineEnabled": true,
+      "widgetOutlineColor": "primary",
+      "widgetOutlineOpacity": 0.2,
+      "widgetOutlineThickness": 1,
+      "fontScale": 1.1,
+      "autoHide": false,
+      "autoHideDelay": 250,
+      "openOnOverview": false,
+      "visible": true,
+      "popupGapsAuto": true,
+      "popupGapsManual": 4,
+      "maximizeDetection": true,
+      "shadowColorMode": "surface",
+      "shadowIntensity": 0,
+      "shadowOpacity": 10,
+      "iconScale": 1,
+      "barInsetPadding": 8,
+      "widgetPadding": 8,
+      "maximizeWidgetIcons": false,
+      "maximizeWidgetText": false,
+      "removeWidgetPadding": false,
+      "useOverlayLayer": false,
+      "hoverPopouts": false,
+      "batteryColorMode": "level",
+      "attachToScreenEdge": false,
+      "island": false,
+      "barLengthPadding": 0,
+      "showOnWindowsOpen": false,
+      "autoHideStrict": false
+    }
+  ],
+  "desktopClockCustomColor": {
+    "r": 1,
+    "g": 1,
+    "b": 1,
+    "a": 1,
+    "hsvHue": -1,
+    "hsvSaturation": 0,
+    "hsvValue": 1,
+    "hslHue": -1,
+    "hslSaturation": 0,
+    "hslLightness": 1,
+    "valid": true
+  },
+  "systemMonitorCustomColor": {
+    "r": 1,
+    "g": 1,
+    "b": 1,
+    "a": 1,
+    "hsvHue": -1,
+    "hsvSaturation": 0,
+    "hsvValue": 1,
+    "hslHue": -1,
+    "hslSaturation": 0,
+    "hslLightness": 1,
+    "valid": true
+  },
+  "desktopWidgetInstances": [
+    {
+      "id": "dw_1768380392350_zqav9y5yh",
+      "widgetType": "systemMonitor",
+      "name": "System Monitor",
+      "enabled": false,
+      "config": {
+        "showHeader": true,
+        "transparency": 0.9,
+        "colorMode": "primary",
+        "customColor": "#ffffff",
+        "showCpu": false,
+        "showCpuGraph": true,
+        "showCpuTemp": true,
+        "showGpuTemp": true,
+        "gpuPciId": "10de:2860",
+        "showMemory": true,
+        "showMemoryGraph": true,
+        "showNetwork": true,
+        "showNetworkGraph": true,
+        "showDisk": true,
+        "showTopProcesses": true,
+        "topProcessCount": 5,
+        "topProcessSortBy": "memory",
+        "layoutMode": "grid",
+        "graphInterval": 300,
+        "displayPreferences": [
+          {
+            "name": "DP-1",
+            "model": "VG27WQ"
+          }
+        ],
+        "showOnOverlay": false,
+        "syncPositionAcrossScreens": true
+      },
+      "group": null
+    },
+    {
+      "id": "dw_1768380396465_up0nm6isi",
+      "widgetType": "desktopClock",
+      "name": "Desktop Clock",
+      "enabled": false,
+      "config": {
+        "style": "analog",
+        "transparency": 0.9,
+        "colorMode": "primary",
+        "customColor": "#ffffff",
+        "showDate": true,
+        "showAnalogNumbers": false,
+        "showAnalogSeconds": true,
+        "displayPreferences": [
+          {
+            "name": "DP-1",
+            "model": "VG27WQ"
+          }
+        ],
+        "syncPositionAcrossScreens": false
+      }
+    },
+    {
+      "id": "dw_1768380802766_i1aks115i",
+      "widgetType": "dankDesktopWeather",
+      "name": "Dank Desktop Weather",
+      "enabled": false,
+      "config": {
+        "displayPreferences": [
+          {
+            "name": "DP-1",
+            "model": "VG27WQ"
+          }
+        ],
+        "showPressure": true,
+        "showHourlyForecast": false,
+        "viewMode": "detailed",
+        "backgroundOpacity": 90,
+        "colorMode": "secondary",
+        "forecastDays": 5,
+        "hourlyCount": 5,
+        "showLocation": true,
+        "showCondition": true,
+        "showWind": true,
+        "showOnOverlay": false
+      }
+    },
+    {
+      "id": "dw_1769259747451_q7874k92g",
+      "widgetType": "mediaPlayer",
+      "name": "Media Player",
+      "enabled": false,
+      "config": {
+        "displayPreferences": [
+          {
+            "name": "DP-1",
+            "model": "VG27WQ"
+          }
+        ],
+        "backgroundOpacity": 97,
+        "borderOpacity": 0,
+        "rotateThumbnail": true
+      }
+    },
+    {
+      "id": "dw_1771092986847_7oio3qa37",
+      "widgetType": "dankRssWidget",
+      "name": "Dank RSS Widget",
+      "enabled": false,
+      "config": {
+        "displayPreferences": [
+          {
+            "name": "DP-1",
+            "model": "VG27WQ"
+          }
+        ],
+        "updateInterval": 30,
+        "feeds": [
+          {
+            "name": "Darknet Diaries",
+            "url": "https://podcast.darknetdiaries.com/"
+          },
+          {
+            "name": "Krebs on Security",
+            "url": "https://krebsonsecurity.com/feed/"
+          },
+          {
+            "name": "0DayFans",
+            "url": "https://0dayfans.com/feed.rss"
+          },
+          {
+            "name": "Kaspersky Securelist",
+            "url": "https://securelist.com/feed/"
+          },
+          {
+            "name": "WeLiveSecurity",
+            "url": "https://feeds.feedburner.com/eset/blog"
+          },
+          {
+            "name": "DailyDarkWeb",
+            "url": "https://dailydarkweb.net/feed"
+          },
+          {
+            "name": "BleepingComputer",
+            "url": "https://www.bleepingcomputer.com/feed/"
+          },
+          {
+            "name": "Dark Reading",
+            "url": "https://www.darkreading.com/rss.xml"
+          },
+          {
+            "name": "CyberCrimeMagazine",
+            "url": "https://cybersecurityventures.com/hack-blotter/feed"
+          },
+          {
+            "name": "TheRecord",
+            "url": "https://therecord.media/news/cybercrime/feed"
+          }
+        ],
+        "backgroundOpacity": 95,
+        "enableBorder": false,
+        "notifyNewItems": false,
+        "showFeedName": false,
+        "viewMode": "expanded",
+        "fontSize": 12,
+        "borderOpacity": 50,
+        "borderThickness": 2,
+        "borderColor": "secondary"
+      }
+    },
+    {
+      "id": "dw_1785135754689_pgyx4a64i",
+      "widgetType": "desktopCommand",
+      "name": "Desktop Command",
+      "enabled": false,
+      "config": {
+        "displayPreferences": [
+          {
+            "name": "DP-1",
+            "model": "VG27WQ"
+          }
+        ],
+        "command": "cava",
+        "autoRefresh": false,
+        "commandTimeout": "1",
+        "refreshInterval": "0.01"
+      }
+    }
+  ],
+  "builtInPluginSettings": {
+    "dms_settings_search": {
+      "trigger": "?"
+    },
+    "dms_clipboard_search": {
+      "trigger": "cb",
+      "enabled": false
+    },
+    "dms_power": {
+      "trigger": "pw"
+    },
+    "dms_qr_generator": {
+      "trigger": "qrg",
+      "enabled": false
+    },
+    "dms_colorpicker": {
+      "enabled": false
+    },
+    "dms_sysmon": {
+      "enabled": false
+    },
+    "dms_notepad": {
+      "enabled": false
+    }
+  },
+  "clipboardVisibleEntryActions": [
+    "pin",
+    "edit",
+    "delete",
+    "copy"
+  ],
+  "launcherPluginVisibility": {
+    "dms_power": {
+      "allowWithoutTrigger": true
+    },
+    "dms_qr_generator": {
+      "allowWithoutTrigger": false
+    },
+    "dms_settings_search": {
+      "allowWithoutTrigger": false
+    },
+    "dms_clipboard_search": {
+      "allowWithoutTrigger": false
+    },
+    "dankHyprlandWindows": {
+      "allowWithoutTrigger": false
+    }
+  },
+  "frameThickness": 2,
+  "frameRounding": 12,
+  "frameColor": "surface",
+  "frameOpacity": 0.85,
+  "frameCloseGaps": false,
+  "frameLauncherEmergeSide": "top",
+  "frameBarInsetPadding": 6,
+  "configVersion": 18
+}

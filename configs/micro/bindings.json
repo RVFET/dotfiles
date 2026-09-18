@@ -1,0 +1,14 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "Alt-a": "lua:snippets.Accept",
+    "Alt-d": "lua:snippets.Cancel",
+    "Alt-s": "lua:snippets.Insert",
+    "Alt-w": "lua:snippets.Next",
+    "AltLeft": "CursorStart",
+    "AltRight": "CursorEnd",
+    "Ctrl-d": "FindNext",
+    "Ctrl-p": "CommandMode",
+    "CtrlL": "SelectLine",
+    "CtrlUnderscore": "lua:comment.comment",
+    "F5": "lua:wc.wordCount"
+}

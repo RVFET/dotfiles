@@ -1,0 +1,136 @@
+# "$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+command_timeout = 5000
+
+format = """
+$os\
+$username\
+$hostname\
+$git_branch\
+$git_status\
+$nodejs\
+$bun\
+$rust\
+$golang\
+$python\
+$time\
+$cmd_duration\
+$line_break\
+$directory\
+$character"""
+
+# ==========================================
+# ROW 1 (User, Host, Git, Runtimes, Time, Exec)
+# ==========================================
+
+# --- OS SYMBOL ---
+[os]
+disabled = false
+style = "green"
+format = "[$symbol]($style) "
+
+[os.symbols]
+Macos = "󰀵"
+Arch = ""
+
+# --- USERNAME & HOSTNAME (SSH Only) ---
+[username]
+show_always = true
+style_user = "green"
+style_root = "bold red"
+format = "[$user]($style)[ │ ](#646464)"
+
+[hostname]
+ssh_only = true
+style = "bold blue"
+format = "[󰣀 $hostname]($style)[ │ ](#646464)"
+
+# --- GIT Branch & Status ---
+[git_branch]
+symbol = " "
+style = "green"
+format = "[$symbol$branch]($style)[ │ ](#646464)"
+
+[git_status]
+style = "#646464"
+format = '([\[ $all_status$ahead_behind\]]($style)[ │ ](#646464))'
+conflicted = "[CONFLICTS ${count}](red) "
+stashed = "[STASHS ${count}](cyan) "
+deleted = "[DELETIONS ${count}](red) "
+modified = "[MODIFICATIONS ${count}](yellow) "
+staged = "[STAGED ${count}](green) "
+untracked = "[UNTRACKED ${count}](blue) "
+ahead = "[AHEAD ${count}](yellow) "
+behind = "[BEHIND ${count}](yellow) "
+diverged = "[DIVERGED](red) "
+up_to_date = "[UP-TO-DATE](green) "
+
+# --- RUNTIMES ---
+[nodejs]
+symbol = " "
+style = "green"
+format = "[$symbol($version)]($style)[ │ ](#646464)"
+detect_folders = []
+
+[bun]
+symbol = " "
+style = "#fbc2eb"
+format = "[$symbol($version)]($style)[ │ ](#646464)"
+
+[rust]
+symbol = " "
+style = "#e24d2a"
+format = "[$symbol($version)]($style)[ │ ](#646464)"
+
+[golang]
+symbol = " "
+style = "#00aed8"
+format = "[$symbol($version)]($style)[ │ ](#646464)"
+
+[python]
+symbol = " "
+style = "yellow"
+format = '[$symbol($version)( \(in $virtualenv\))]($style)[ │ ](#646464)'
+
+# --- TIME ---
+[time]
+disabled = false
+time_format = "%T"
+style = "#848484"
+format = "[$time]($style)"
+
+# --- EXECUTION TIME ---
+[cmd_duration]
+min_time = 100
+style = "yellow"
+format = "[ │ ](#646464)[󰚭]($style) [≈](#646464) [$duration]($style)"
+
+
+# ==========================================
+# ROW 2 (Directory and Character Symbol)
+# ==========================================
+
+# --- DIRECTORY ---
+[directory]
+truncation_length = 2
+truncation_symbol = ".../"
+truncate_to_repo = false
+style = "yellow"
+format = "[└╴](#646464)[at $path]($style)[$read_only]($read_only_style) "
+read_only = " 󰍁"
+read_only_style = "red"
+substitutions = [
+  { from = "^~/Development/?", to = "󰴉 ", regex = true },
+  { from = "^~/Downloads/?", to = "󰉍 ", regex = true },
+  { from = "^~/Pictures/?", to = "󰉏 ", regex = true },
+  { from = "^~/Videos/?", to = "󱧺 ", regex = true },
+  { from = "^~/Brainstorming/?", to = " ", regex = true },
+  { from = "^~/?", to = "󱂵 ", regex = true },
+]
+
+# --- CHARACTER (Exit status indicator) ---
+[character]
+success_symbol = "[\\$](#646464)"
+error_symbol = "[󰅖](bold red)"
+format = "$symbol "

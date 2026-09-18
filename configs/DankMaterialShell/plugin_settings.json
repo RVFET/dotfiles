@@ -1,0 +1,93 @@
+{
+  "dockerManager": {
+    "enabled": true,
+    "groupByCompose": false,
+    "dockerBinary": "podman",
+    "terminalApp": "ghostty"
+  },
+  "easyEffects": {
+    "enabled": false,
+    "currentOutputIndex": -1,
+    "currentInputIndex": -1
+  },
+  "emojiLauncher": {
+    "enabled": false,
+    "trigger": ":",
+    "recentEmojis": "😥,,,,📝,,🪟,💻,🇬🇷,😭,📷,🇹🇦"
+  },
+  "wallpaperDiscovery": {
+    "enabled": true
+  },
+  "mediaPlayer": {
+    "enabled": false
+  },
+  "dankDesktopWeather": {
+    "enabled": false
+  },
+  "dankBatteryAlerts": {
+    "enabled": false
+  },
+  "displayManager": {
+    "enabled": false
+  },
+  "dankHooks": {
+    "enabled": false
+  },
+  "dankLauncherKeys": {
+    "enabled": true
+  },
+  "displaySettings": {
+    "enabled": false
+  },
+  "powerUsagePlugin": {
+    "enabled": false
+  },
+  "hyprlandSubmap": {
+    "enabled": true
+  },
+  "customRunningApps": {
+    "enabled": true,
+    "itemPercentage": 70,
+    "spaceBetweenItems": 5,
+    "showIndicatorOnHover": false,
+    "resizePercentage": 125
+  },
+  "dankGifSearch": {
+    "enabled": true
+  },
+  "developerUtilities": {
+    "enabled": true,
+    "autoPaste": false
+  },
+  "dankHyprlandWindows": {
+    "enabled": true
+  },
+  "dankNotepadModule": {
+    "enabled": true
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "="
+  },
+  "hiddenBar": {
+    "enabled": false
+  },
+  "dankRssWidget": {
+    "enabled": false
+  },
+  "nvidiaGpuDankbarMonitor": {
+    "enabled": true
+  },
+  "gpuMonitor": {
+    "enabled": true
+  },
+  "nvidiaGpuMonitor": {
+    "enabled": true
+  },
+  "screenRecorderYS": {
+    "enabled": true
+  },
+  "unifiedTaskbar": {
+    "enabled": false
+  }
+}
