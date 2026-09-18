@@ -1,0 +1,7 @@
+hostname: "arch"
+profile: main
+
+repository:
+  type: git
+  url: https://github.com/rvfet/codium.git
+  branch: master

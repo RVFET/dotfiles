@@ -538,8 +538,13 @@ configs:
   - name: "fresh/config.json"
     dest: "~/.config/fresh/config.json"
 
-  - name: "ghostty"
-    dest: "~/.config/ghostty"
+  - name: "ghostty-config-linux"
+    dest: "~/.config/ghostty/config"
+    os: ["linux"]
+
+  - name: "ghostty-config-mac"
+    dest: "~/.config/ghostty/config"
+    os: ["mac"]
 
   - name: "scripts"
     dest: "~/scripts"
@@ -657,6 +662,16 @@ configs:
   - name: "micro/bindings.json"
     dest: "~/.config/micro/bindings.json"
 
+  # vscodium
+  - name: "vscodium-linux.yml"
+    dest: "~/.config/VSCodium/User/globalStorage/zokugun.sync-settings/settings.yml"
+    os: ["linux"]
+
+  - name: "vscodium-mac.yml"
+    dest: "~/Library/Application Support/VSCodium/User/globalStorage/zokugun.sync-settings/settings.yml"
+    os: ["mac"]
+
+  # SUDO required
   - name: "etc/keyd/default.conf"
     dest: "/etc/keyd/default.conf"
     os: ["linux"]

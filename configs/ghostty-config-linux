@@ -22,7 +22,7 @@ font-style-italic = "Italic"
 # === WINDOW ===
 window-decoration = false
 background-opacity = 0.1
-background-blur = macos-glass-clear
+background-blur = true
 mouse-scroll-multiplier = 0.5
 
 # === BACKGROUND ===
