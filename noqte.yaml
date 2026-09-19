@@ -5,8 +5,14 @@
 repo_path: "."
 
 settings:
-  backup: true
-  git_backup: true
+  local_backups: true
+  git_backups: true
+  branch_cleanup:
+    enabled: true
+    protect_today: true
+    retain_daily: 7
+    retain_weekly: 4
+    retain_monthly: 12
   preflight: true
 
 # ==============================================================================
@@ -508,10 +514,12 @@ configs:
   - name: ".zsh"
     dest: "~/.zsh"
     encrypted: true
+    ignore_diff: true   # <-- age generatos new salt everytime. See: https://github.com/RVFET/noqte/issues/3
 
   - name: "hypr/dms"
     dest: "~/.config/hypr/dms"
     os: ["linux"]
+    ignore_diff: true   # <-- changes colors and stuff dynamically from wallpaper
 
   - name: "yazi"
     dest: "~/.config/yazi"
@@ -521,6 +529,7 @@ configs:
   - name: "Brainstorming"
     dest: "~/Brainstorming"
     encrypted: true
+    ignore_diff: true   # <-- age generatos new salt everytime. See: https://github.com/RVFET/noqte/issues/3
 
   - name: "fastfetch"
     dest: "~/.config/fastfetch"
@@ -570,21 +579,31 @@ configs:
   - name: ".zshenv"
     dest: "~/.zshenv"
     encrypted: true
+    ignore_diff: true   # <-- age generatos new salt everytime. See: https://github.com/RVFET/noqte/issues/3
 
   - name: ".zsh_history"
     dest: "~/.zsh_history"
     encrypted: true
+    ignore_diff: true   # <-- age generatos new salt everytime. See: https://github.com/RVFET/noqte/issues/3
 
   - name: ".wakatime.cfg"
     dest: "~/.wakatime.cfg"
     encrypted: true
+    ignore_diff: true   # <-- age generatos new salt everytime. See: https://github.com/RVFET/noqte/issues/3
 
   - name: "fish_history"
     dest: "~/.local/share/fish/fish_history"
     encrypted: true
+    ignore_diff: true   # <-- age generatos new salt everytime. See: https://github.com/RVFET/noqte/issues/3
+
+  - name: "cliphist.db"
+    dest: "~/.cache/cliphist/db"
+    encrypted: true
+    ignore_diff: true
 
   - name: "install_release/config.json"
     dest: "~/.config/install_release/config.json"
+    os: ["linux"]   # <-- on macos it puts stuff inside of ~/Library/...
 
   - name: "satty/config.toml"
     dest: "~/.config/satty/config.toml"
@@ -608,29 +627,35 @@ configs:
 
   - name: "DankMaterialShell/plugin_settings.json"
     dest: "~/.config/DankMaterialShell/plugin_settings.json"
+    ignore_diff: true   # not worthy enough for a whole backup
 
   - name: "DankMaterialShell/plugins.lock.json"
     dest: "~/.config/DankMaterialShell/plugins.lock.json"
+    ignore_diff: true   # not worthy enough for a whole backup
 
   - name: "DankMaterialShell/settings.json"
     dest: "~/.config/DankMaterialShell/settings.json"
 
-  # Electron shenanigans
+  # Electron flags
   - name: "brave-flags.conf"
     dest: "~/.config/brave-flags.conf"
     os: ["linux"]
+    ignore_diff: true   # not worthy enough for a whole backup
 
   - name: "chrome-flags.conf"
     dest: "~/.config/chrome-flags.conf"
     os: ["linux"]
+    ignore_diff: true   # not worthy enough for a whole backup
 
   - name: "chromium-flags.conf"
     dest: "~/.config/chromium-flags.conf"
     os: ["linux"]
+    ignore_diff: true   # not worthy enough for a whole backup
 
   - name: "code-flags.conf"
     dest: "~/.config/code-flags.conf"
     os: ["linux"]
+    ignore_diff: true   # not worthy enough for a whole backup
 
   - name: "rvfet-assets"
     dest: "~/Pictures/Assets"
@@ -662,7 +687,7 @@ configs:
   - name: "micro/bindings.json"
     dest: "~/.config/micro/bindings.json"
 
-  # vscodium
+  # VSCodium (OS separated because keybindings are not interchangable)
   - name: "vscodium-linux.yml"
     dest: "~/.config/VSCodium/User/globalStorage/zokugun.sync-settings/settings.yml"
     os: ["linux"]
@@ -671,7 +696,7 @@ configs:
     dest: "~/Library/Application Support/VSCodium/User/globalStorage/zokugun.sync-settings/settings.yml"
     os: ["mac"]
 
-  # SUDO required
+  # System configs
   - name: "etc/keyd/default.conf"
     dest: "/etc/keyd/default.conf"
     os: ["linux"]
@@ -680,13 +705,16 @@ configs:
     dest: "/etc/dnscrypt-proxy/dnscrypt-proxy.toml"
     os: ["linux"]
     encrypted: true
+    ignore_diff: true   # <-- age generatos new salt everytime. See: https://github.com/RVFET/noqte/issues/3
 
   - name: "etc/systemd/resolved.conf.d/dns.conf"
     dest: "/etc/systemd/resolved.conf.d/dns.conf"
     os: ["linux"]
     encrypted: true
+    ignore_diff: true   # <-- age generatos new salt everytime. See: https://github.com/RVFET/noqte/issues/3
 
   - name: "etc/NetworkManager/conf.d/dns.conf"
     dest: "/etc/NetworkManager/conf.d/dns.conf"
     os: ["linux"]
     encrypted: true
+    ignore_diff: true   # <-- age generatos new salt everytime. See: https://github.com/RVFET/noqte/issues/3
