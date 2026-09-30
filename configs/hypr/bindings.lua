@@ -7,6 +7,7 @@ hl.bind(var_mod .. " + C", hl.dsp.exec_cmd("$BROWSER"))
 hl.bind(var_mod .. " + E", hl.dsp.exec_cmd("$FILEMANAGER"))
 hl.bind(var_mod .. " + I", hl.dsp.exec_cmd("dms ipc call settings toggle"))
 hl.bind(var_mod .. " + S", hl.dsp.exec_cmd("geany"))
+hl.bind(var_mod .. " + T", hl.dsp.window.bring_to_top())
 hl.bind(var_mod .. " + M", hl.dsp.exec_cmd("dms ipc call dash toggle media"))
 hl.bind(var_mod .. " + N", hl.dsp.exec_cmd("dms ipc call notifications toggle"))
 hl.bind(var_mod .. " + V", hl.dsp.exec_cmd("dms ipc call clipboard toggle"))
@@ -26,27 +27,33 @@ hl.bind("CTRL + ESCAPE", hl.dsp.exec_cmd("dms color pick --hex -a"))
 hl.bind("CTRL + SHIFT + ESCAPE", hl.dsp.exec_cmd("dms ipc call processlist toggle"))
 hl.bind("CTRL + SHIFT + Q", hl.dsp.exec_cmd("fish -c 'set win (hyprctl activewindow -j | jq -r \".class, .pid\"); yad --text=\"Force-kill $win?\" --button=\"Cancel:1\" --button=\"OK:0\" && kill -9 $win'"))
 
+-- ===== PLUGIN BINDINGS =====
 
--- ===== SUPER + NUM N = Move to workspace N =====
 local smw_ok, smw = pcall(require, "plugins.split-monitor-workspaces")
 if smw_ok then
     smw.setup({
-      workspace_count = 2,
-      max_workspaces = { ["DP-1"] = 3 },
-      enable_wrapping = true,
-      enable_notifications = false,
+        workspace_count = 3,
+        -- max_workspaces = { ["DP-1"] = 3 },
+        enable_wrapping = true,
+        enable_notifications = false,
     })
 
-    for i = 1, 10 do
+    for i = 1, smw.get_amount_of_workspaces() do
         local workspace_num = tostring(i)
         local key = tostring(i % 10)
-        hl.bind(var_mod .. " + " .. key, hl.dsp.focus({ workspace = workspace_num }))
-        hl.bind(var_mod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = workspace_num }))
-    end
 
-    hl.bind(var_mod .. " + TAB", smw.workspace("+1"))
+        hl.bind(var_mod .. " + " .. key, smw.workspace(workspace_num))
+        hl.bind(var_mod .. " + SHIFT + " .. key, smw.move_to_workspace(workspace_num))
+    end
 end
 
+for idx, mon in ipairs(hl.get_monitors()) do
+    local key = tostring(idx % 10)
+    local mon_target = tostring(mon.id)
+
+    hl.bind(var_mod .. " + CTRL + " .. key, hl.dsp.focus({ monitor = mon_target }))
+    hl.bind(var_mod .. " + CTRL + SHIFT + " .. key, hl.dsp.window.move({ monitor = mon_target }))
+end
 
 -- ===== Cheat sheet =====
 hl.bind(var_mod .. " + SHIFT + Slash", hl.dsp.exec_cmd("dms ipc call keybinds toggle hyprland"))
@@ -154,8 +161,8 @@ hl.bind(var_mod .. " + down", hl.dsp.focus({ direction = "down" }))
 hl.bind(var_mod .. " + Z", hl.dsp.window.center())
 
 -- Cycle Workspaces on Current Monitor (Mouse)
-hl.bind(var_mod .. " + mouse_down", hl.dsp.focus({ workspace = "r+1" }))
-hl.bind(var_mod .. " + mouse_up", hl.dsp.focus({ workspace = "r-1" }))
+hl.bind(var_mod .. " + mouse_down", hl.dsp.focus({ workspace = "m+1" }))
+hl.bind(var_mod .. " + mouse_up", hl.dsp.focus({ workspace = "m-1" }))
 hl.bind(var_mod .. " + SHIFT + mouse_down", hl.dsp.window.move({ workspace = "r+1" }))
 hl.bind(var_mod .. " + SHIFT + mouse_up", hl.dsp.window.move({ workspace = "r-1" }))
 

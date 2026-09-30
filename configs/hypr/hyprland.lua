@@ -8,7 +8,7 @@ require("dms.colors")
 -- ===== ENVIRONMENT VARIABLES =====
 local env_vars = {
     FILEMANAGER                         = "nemo",
-    TERMINAL                            = "ghostty",
+    TERMINAL                            = "alacritty",
     BROWSER                             = "zen-browser",
     EDITOR                              = "micro",
     ELECTRON_OZONE_PLATFORM_HINT        = "wayland",
@@ -71,34 +71,34 @@ hl.config({
         gaps_out = 12,
         border_size = 1,
         col = {
-            active_border = "rgba(4D3B3Aff)",
-            inactive_border = "rgba(141413ff)",
+            active_border = "rgba(201F1Dff)",
+            inactive_border = "rgba(131211ff)",
         },
     },
     decoration = {
-        rounding = 32,
+        rounding = 16,
         rounding_power = 2.0,
         active_opacity = 0.9,
-        inactive_opacity = 0.75,
+        inactive_opacity = 0.65,
 --         screen_shader = "~/.config/hypr/shaders/example.frag",
         blur = {
             enabled = true,
             size = 16,
             passes = 3,
-            xray = true,
-            noise = 0.25,
-            contrast = 2,
+            xray = false,
+            noise = 0.075,
+            contrast = 1.5,
             popups = true,
             vibrancy = 0.8,
-            brightness = 0.2,
+            brightness = 0.3,
             ignore_opacity = true,
-            vibrancy_darkness = 0.8,
+            vibrancy_darkness = 0.4,
             new_optimizations = true,
             popups_ignorealpha = 0.2,
         },
         shadow = {
             enabled = true,
-            range = 50,
+            range = 30,
             render_power = 2,
             offset = "0 4",
             color = "rgba(00000070)",
@@ -167,6 +167,7 @@ if hl.plugin and hl.plugin.dynamic_cursors ~= nil then
     })
 end
 
+
 -- ===== ANIMATIONS & CURVES =====
 hl.curve("overshot", { type = "bezier", points = { { 0.13, 0.99 }, { 0.1, 1.08 } } })
 hl.curve("default",  { type = "bezier", points = { { 0.05, 0.90 }, { 0.1, 1.05 } } })
@@ -213,8 +214,7 @@ local window_rules = {
 
     -- Opacity rules
     { match = { class = "^(dev.zed.Zed|code|codium|yaak-app)$" }, opacity = 0.9 },
-    { match = { class = "^brave-browser$", fullscreen = 0 }, opacity = 0.9, float = true, size = { 1936, 1096 } },
-    { match = { class = "zen", fullscreen = 0 }, render_unfocused = true, float = true, center = true, size = {1936, 1096 } },
+    { match = { class = "^(zen|brave-browser)$", fullscreen = 0 }, render_unfocused = true, float = true, opaque = true, center = true, size = {1936, 1096 } },
 
     -- Floating apps with explicit sizing
     { match = { class = "^(oculante)$" }, float = true, size = { 1400, 900 } },
