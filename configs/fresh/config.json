@@ -377,12 +377,6 @@
     "zig-lsp": {
       "enabled": true,
       "path": "/home/rvfet/.cache/fresh/embedded-plugins/a08a3e9b72dae0fe/zig-lsp.ts"
-    },
-    "welcome_screen": {
-      "enabled": true,
-      "settings": {
-        "showOnStartup": true
-      }
     }
   },
   "file_explorer": {
@@ -398,21 +392,21 @@
     "python": {
       "command": "ruff",
       "args": ["server"],
-      "enabled": true,
-      "auto_start": true,
-      "process_limits": {
-        "max_memory_percent": 50,
-        "max_cpu_percent": 90,
-        "enabled": true
-      }
-    },
-    "lua": {
-      "enabled": true,
-      "auto_start": true,
-      "process_limits": {
-        "max_memory_percent": 50,
-        "max_cpu_percent": 90,
-        "enabled": true
+      "initializationOptions": {
+        "settings": {
+          "configuration": {
+            "lint": {
+              "extendSelect": ["ALL"],
+              "ignore": [
+                "PLR2004", "S311", "TRY300", "TRY401", "TRY400", "RUF001",
+                "D101", "D100", "D203", "D213", "INP001", "D106", "D107",
+                "D102", "ERA001", "TRY003", "BLE001", "PERF203", "ANN401",
+                "TRY301", "FBT001", "FBT002", "S101", "DTZ005", "G201",
+                "RUF012", "CY001"
+              ]
+            }
+          }
+        }
       }
     }
   },
@@ -490,23 +484,6 @@
       "modifiers": ["alt"],
       "action": "orchestrator_open",
       "when": ""
-    },
-    {
-      "key": "w",
-      "modifiers": ["ctrl"],
-      "action": "close_tab",
-      "when": "normal"
-    },
-    {
-      "key": "l",
-      "modifiers": ["ctrl"],
-      "action": "set_language"
-    },
-    {
-      "key": " ",
-      "modifiers": ["ctrl", "shift"],
-      "action": "expand_selection"
     }
-  ],
-  "version": 2
+  ]
 }

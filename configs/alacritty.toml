@@ -6,7 +6,7 @@ multiplier = 5
 # === WINDOW ===
 [window]
 decorations = "None"
-opacity = 0.1
+opacity = 0.95
 blur = true
 dynamic_title = false
 
@@ -21,11 +21,7 @@ y = 20
 # === FONT ===
 [font]
 size = 12
-# builtin_box_drawing = false
-
-[font.offset]
-x = 0
-y = -1
+builtin_box_drawing = false
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
@@ -44,13 +40,12 @@ style = "Italic"
 bindings = [
 	{ key = "C", mods = "Alt", action = "Copy" },
 	{ key = "V", mods = "Control", action = "Paste" },
-# 	{ key = "L", mods = "Control", chars = "clear\n" },
+	{ key = "L", mods = "Control", chars = "clear\n" },
 	{ key = "Q", mods = "Control|Shift", action = "Quit" },
 	{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
 	{ key = "Enter", mods = "Control", action = "ToggleFullscreen" },
 	{ key = "ArrowUp", mods = "Control", action = "ScrollPageUp" },
 	{ key = "ArrowDown", mods = "Control", action = "ScrollPageDown" },
-  { key = "Space", mods = "Control|Shift", chars = "\u001b[32;6u" }
 ]
 
 # === MOUSE ===

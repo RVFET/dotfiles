@@ -92,5 +92,5 @@ end
 if status is-interactive
     type -q zoxide; and zoxide init fish | source
     type -q starship; and starship init fish | source
-#     type -q fetch; and fetch --infinite; or begin; type -q fastfetch; and fastfetch; end
+    type -q fetch; and fetch --infinite; or begin; type -q fastfetch; and fastfetch; end
 end

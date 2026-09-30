@@ -1,7 +1,7 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "customThemeFile": "/home/rvfet/.config/DankMaterialShell/themes/deepmono/theme.json",
+  "customThemeFile": "/home/rvfet/.config/DankMaterialShell/themes/darkmatter/theme.json",
   "registryThemeVariants": {
     "flexoki": "green",
     "deepmono": {
@@ -11,7 +11,7 @@
       }
     }
   },
-  "matugenScheme": "scheme-content",
+  "matugenScheme": "scheme-smart",
   "matugenSourceMode": "value",
   "dockTransparency": 0.9,
   "widgetBackgroundColor": "sc",
@@ -93,16 +93,15 @@
       "mountPath": "/"
     }
   ],
+  "showWorkspaceIndex": true,
   "showWorkspaceName": true,
   "showWorkspaceApps": true,
   "maxWorkspaceIcons": 10,
+  "workspaceAppIconSizeOffset": 3,
+  "groupWorkspaceApps": false,
   "workspaceFollowFocus": true,
+  "showOccupiedWorkspacesOnly": true,
   "workspaceActiveAppHighlightEnabled": true,
-  "workspaceColorMode": "secondary",
-  "workspaceOccupiedColorMode": "schh",
-  "workspaceUnfocusedColorMode": "schh",
-  "workspaceFocusedBorderEnabled": true,
-  "workspaceFocusedBorderColor": "tertiaryContainer",
   "runningAppsCurrentWorkspace": false,
   "centeringMode": "geometric",
   "clockDateFormat": "yyyy-M-d",
@@ -136,8 +135,8 @@
   "launcherLogoMode": "custom",
   "launcherLogoCustomPath": "/home/rvfet/Pictures/Assets/rvfet-logo-filled.svg",
   "launcherLogoSizeOffset": -5,
-  "fontFamily": "Geist",
   "monoFontFamily": "JetBrainsMono Nerd Font",
+  "textRenderType": 1,
   "notepadFontSize": 16,
   "notepadShowLineNumbers": true,
   "notepadLastCustomTransparency": 1,
@@ -163,6 +162,7 @@
   "dockAutoHide": true,
   "dockUseOverlayLayer": true,
   "dockGroupByApp": true,
+  "dockPosition": 2,
   "dockSpacing": 8,
   "dockMargin": 10,
   "dockIconSize": 34,
@@ -176,6 +176,7 @@
   "modalDarkenBackground": false,
   "notificationCompactMode": true,
   "notificationShowTimeoutBar": true,
+  "notificationPopupPosition": 3,
   "notificationAnimationSpeed": 3,
   "notificationHistoryMaxCount": 200,
   "notificationHistoryMaxAgeDays": 30,
@@ -205,7 +206,7 @@
       "id": "default",
       "name": "Main Bar",
       "enabled": true,
-      "position": 0,
+      "position": 1,
       "screenPreferences": [
         "all"
       ],
@@ -323,7 +324,7 @@
         }
       ],
       "spacing": 0,
-      "innerPadding": 4,
+      "innerPadding": 8,
       "bottomGap": 0,
       "transparency": 0.8,
       "widgetTransparency": 0.5,
@@ -340,7 +341,7 @@
       "widgetOutlineColor": "primary",
       "widgetOutlineOpacity": 0.2,
       "widgetOutlineThickness": 1,
-      "fontScale": 1,
+      "fontScale": 1.1,
       "autoHide": false,
       "autoHideDelay": 250,
       "openOnOverview": false,
@@ -352,7 +353,7 @@
       "shadowIntensity": 0,
       "shadowOpacity": 10,
       "iconScale": 1,
-      "barInsetPadding": 4,
+      "barInsetPadding": 8,
       "widgetPadding": 8,
       "maximizeWidgetIcons": false,
       "maximizeWidgetText": false,
